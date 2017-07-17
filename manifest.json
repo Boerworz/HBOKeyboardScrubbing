@@ -1,0 +1,12 @@
+{
+	"manifest_version": 2,
+
+	"name": "HBO Keyboard Scrubbing",
+	"description": "This extension allows you to use the left and right arrow keys to scrub a few seconds backwards or forwards in the HBO player. Hold shift to increase the scrubbing distance.",
+	"version": "1.0",
+
+	"content_scripts": [{
+		"matches": ["https://se.hbonordic.com/player", "https://se.hbonordic.com/*/player"],
+		"js": ["content.js"]
+	}]
+}
